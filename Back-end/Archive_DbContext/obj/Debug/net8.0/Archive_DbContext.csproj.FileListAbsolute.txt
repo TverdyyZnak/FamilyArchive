@@ -1,0 +1,14 @@
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\bin\Debug\net8.0\Archive_DbContext.deps.json
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\bin\Debug\net8.0\Archive_DbContext.runtimeconfig.json
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\bin\Debug\net8.0\Archive_DbContext.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\bin\Debug\net8.0\Archive_DbContext.pdb
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.csproj.AssemblyReference.cache
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.AssemblyInfoInputs.cache
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.AssemblyInfo.cs
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.csproj.CoreCompileInputs.cache
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\refint\Archive_DbContext.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.pdb
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.genruntimeconfig.cache
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\ref\Archive_DbContext.dll
