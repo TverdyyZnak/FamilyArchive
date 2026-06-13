@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Archive_DbContext.Repositories
 {
-    public class ChapterRepository
+    public class ChapterRepository : IChapterRepository
     {
         private readonly AppDbContext _context;
         public ChapterRepository(AppDbContext dbContext)
@@ -20,20 +20,20 @@ namespace Archive_DbContext.Repositories
         public async Task<List<Chapter>> GetAll()
         {
             var chapterEntities = await _context.Chapter.Include(c => c.Files).ToListAsync();
-            var resp = chapterEntities.Select(c => 
+            var resp = chapterEntities.Select(c =>
             {
                 var ch = Chapter.Create(c.Id, c.SerialNumber, c.Title, c.Description, c.StartDate, c.EndDate).chapter;
                 ch.Files = c.Files.Select(f => FileResource.Create(f.Id, f.Title, f.ResourceUrl).file).ToList();
                 return ch;
             }).ToList();
-            
+
             return resp;
         }
 
         public async Task<Chapter?> GetById(Guid id)
         {
             var ch = await _context.Chapter.Include(c => c.Files).FirstOrDefaultAsync(c => c.Id == id);
-            if ( ch == null) { return null; }
+            if (ch == null) { return null; }
             var resp = Chapter.Create(ch.Id, ch.SerialNumber, ch.Title, ch.Description, ch.StartDate, ch.EndDate).chapter;
             resp.Files = ch.Files.Select(f => FileResource.Create(f.Id, f.Title, f.ResourceUrl).file).ToList();
             return resp;
@@ -41,7 +41,7 @@ namespace Archive_DbContext.Repositories
 
         public async Task<Guid> CreateNewChapter(Chapter chapter)
         {
-            ChapterEntity entity = new ChapterEntity 
+            ChapterEntity entity = new ChapterEntity
             {
                 Id = chapter.Id,
                 SerialNumber = chapter.SerialNumber,
@@ -71,7 +71,7 @@ namespace Archive_DbContext.Repositories
             .SetProperty(f => f.StartDate, f => start)
             .SetProperty(f => f.EndDate, f => end));
 
-            if(rowCount == 0) { return Guid.Empty; }
+            if (rowCount == 0) { return Guid.Empty; }
             return id;
         }
 
@@ -84,7 +84,7 @@ namespace Archive_DbContext.Repositories
         public async Task<Guid> AddToFile(Guid id, FileResource file)
         {
             var chapter = await _context.Chapter.FirstOrDefaultAsync(c => c.Id == id);
-            if(chapter == null) { return Guid.Empty; }
+            if (chapter == null) { return Guid.Empty; }
 
             var fileEntity = new FileResourceEntity
             {
