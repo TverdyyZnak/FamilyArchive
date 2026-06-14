@@ -124,7 +124,6 @@ namespace Archive_DbContext.Repositories
             }
         }
 
-
         public async Task<Guid> Delete(Guid id)
         {
             await _context.Person.Where(p => p.Id == id).ExecuteDeleteAsync();
