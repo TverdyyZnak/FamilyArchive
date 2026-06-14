@@ -43,6 +43,8 @@ namespace Archive_DbContext.Repositories
 
         public async Task<Guid> CreateNewUser(User user)
         {
+            if(await _context.User.AsNoTracking().FirstOrDefaultAsync(u => u.Login == user.Login) != null) { return Guid.Empty; }
+
             UserEntity entity = new UserEntity
             {
                 Id = user.Id,

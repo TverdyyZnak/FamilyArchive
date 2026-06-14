@@ -111,3 +111,14 @@ D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\tr\Micros
 D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\.Проекты\FamilyArchive\Back-end\Archive_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\BCrypt-Net-Next.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Application.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_API\bin\Debug\net8.0\Application.pdb
