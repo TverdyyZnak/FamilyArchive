@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class FamilyTreeService
+    public class FamilyTreeService : IFamilyTreeService
     {
         private readonly IFamilyTreeRepository _repository;
         public FamilyTreeService(IFamilyTreeRepository familyTreeRepository)

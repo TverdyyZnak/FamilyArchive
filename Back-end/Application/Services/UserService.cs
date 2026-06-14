@@ -34,6 +34,11 @@ namespace Application.Services
             return await _repository.GetById(id);
         }
 
+        public async Task<User?> GetUserByLogin(string login)
+        {
+            return await _repository.GetByLogin(login);
+        }
+
         public async Task<Guid> Registration(User user)
         {
             user.Password = HashPassword.CreateHashPass(user.Password);
