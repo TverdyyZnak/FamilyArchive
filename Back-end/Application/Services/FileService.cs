@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class FileService
+    public class FileService : IFileService
     {
         private readonly IFileRepository _repository;
         public FileService(IFileRepository fileRepository)
