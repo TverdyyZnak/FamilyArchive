@@ -3,43 +3,45 @@
   "WorkspaceRootPath": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\chapterentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\controllers\\treecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:controllers\\treecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\familytreeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\familytreerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\fileresourceentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\personentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\interfaces\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\params.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\chapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\familytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\fileresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\contracts\\treecontracts\\treerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:contracts\\treecontracts\\treerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\contracts\\personcontracts\\personrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:contracts\\personcontracts\\personrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\controllers\\chaptercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:controllers\\chaptercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\contracts\\chaptercontracts\\chapterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:contracts\\chaptercontracts\\chapterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\contracts\\personcontracts\\personfullresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:contracts\\personcontracts\\personfullresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_api\\contracts\\personcontracts\\personshortresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B85361-0800-4B77-805E-77C47D8B7ABE}|Archive_API.csproj|solutionrelative:contracts\\personcontracts\\personshortresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,138 +51,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChapterEntity.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\ChapterEntity.cs",
-              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\ChapterEntity.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\ChapterEntity.cs",
-              "RelativeToolTip": "..\\Archive_DbContext\\Entities\\ChapterEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:11:23.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FamilyTreeEntity.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\FamilyTreeEntity.cs",
-              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\FamilyTreeEntity.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\FamilyTreeEntity.cs",
-              "RelativeToolTip": "..\\Archive_DbContext\\Entities\\FamilyTreeEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:11:18.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileResourceEntity.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\FileResourceEntity.cs",
-              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\FileResourceEntity.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\FileResourceEntity.cs",
-              "RelativeToolTip": "..\\Archive_DbContext\\Entities\\FileResourceEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:11:12.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonEntity.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\PersonEntity.cs",
-              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\PersonEntity.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\PersonEntity.cs",
-              "RelativeToolTip": "..\\Archive_DbContext\\Entities\\PersonEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:11:07.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserEntity.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\UserEntity.cs",
-              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\UserEntity.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\UserEntity.cs*",
-              "RelativeToolTip": "..\\Archive_DbContext\\Entities\\UserEntity.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:10:52.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Archive_DbContext\\AppDbContext.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\AppDbContext.cs",
-              "RelativeToolTip": "..\\Archive_DbContext\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:08:13.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FamilyTree.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\FamilyTree.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Classes\\FamilyTree.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\FamilyTree.cs",
-              "RelativeToolTip": "..\\Domain\\Classes\\FamilyTree.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:04:18.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FileResource.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\FileResource.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Classes\\FileResource.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\FileResource.cs",
-              "RelativeToolTip": "..\\Domain\\Classes\\FileResource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:04:04.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Person.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Person.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Classes\\Person.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Person.cs",
-              "RelativeToolTip": "..\\Domain\\Classes\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:03:42.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\User.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Classes\\User.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\User.cs",
-              "RelativeToolTip": "..\\Domain\\Classes\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:02:47.78Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -195,41 +67,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Params.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Params.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Params.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Params.cs",
-              "RelativeToolTip": "..\\Domain\\Params.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FamilyTreeRepository.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
+              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
+              "RelativeToolTip": "..\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:03:01.463Z",
+              "WhenOpened": "2026-06-14T19:59:43.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TreeController.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Controllers\\TreeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TreeController.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Controllers\\TreeController.cs",
+              "RelativeToolTip": "Controllers\\TreeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwDIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:58:23.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TreeRequest.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\TreeContracts\\TreeRequest.cs",
+              "RelativeDocumentMoniker": "Contracts\\TreeContracts\\TreeRequest.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\TreeContracts\\TreeRequest.cs",
+              "RelativeToolTip": "Contracts\\TreeContracts\\TreeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:54:23.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChapterRequest.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\ChapterContracts\\ChapterRequest.cs",
+              "RelativeDocumentMoniker": "Contracts\\ChapterContracts\\ChapterRequest.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\ChapterContracts\\ChapterRequest.cs",
+              "RelativeToolTip": "Contracts\\ChapterContracts\\ChapterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:40:30.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IEntity.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Interfaces\\IEntity.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IEntity.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Interfaces\\IEntity.cs",
-              "RelativeToolTip": "..\\Domain\\Interfaces\\IEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Title": "ChapterController.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Controllers\\ChapterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChapterController.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Controllers\\ChapterController.cs",
+              "RelativeToolTip": "Controllers\\ChapterController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowC4AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:02:39.577Z",
+              "WhenOpened": "2026-06-14T19:38:23.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonRequest.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\PersonContracts\\PersonRequest.cs",
+              "RelativeDocumentMoniker": "Contracts\\PersonContracts\\PersonRequest.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\PersonContracts\\PersonRequest.cs",
+              "RelativeToolTip": "Contracts\\PersonContracts\\PersonRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:33:43.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Chapter.cs",
-              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Chapter.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Classes\\Chapter.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Chapter.cs",
-              "RelativeToolTip": "..\\Domain\\Classes\\Chapter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\PersonRepository.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\PersonRepository.cs",
+              "RelativeToolTip": "..\\Archive_DbContext\\Repositories\\PersonRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:01:43.827Z",
+              "WhenOpened": "2026-06-14T19:30:15.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "Controllers\\PersonController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA3wE4AAAC0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:02:16.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Person.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Classes\\Person.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Person.cs",
+              "RelativeToolTip": "..\\Domain\\Classes\\Person.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:01:18.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonFullResponse.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\PersonContracts\\PersonFullResponse.cs",
+              "RelativeDocumentMoniker": "Contracts\\PersonContracts\\PersonFullResponse.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\PersonContracts\\PersonFullResponse.cs",
+              "RelativeToolTip": "Contracts\\PersonContracts\\PersonFullResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T19:00:23.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonShortResponse.cs",
+              "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\PersonContracts\\PersonShortResponse.cs",
+              "RelativeDocumentMoniker": "Contracts\\PersonContracts\\PersonShortResponse.cs",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Contracts\\PersonContracts\\PersonShortResponse.cs",
+              "RelativeToolTip": "Contracts\\PersonContracts\\PersonShortResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T18:59:04.942Z",
               "EditorCaption": ""
             }
           ]

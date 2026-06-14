@@ -12,3 +12,7 @@ D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\ref
 D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.pdb
 D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.genruntimeconfig.cache
 D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\ref\Archive_DbContext.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_DbContext.sourcelink.json
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\bin\Debug\net8.0\Domain.dll
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\bin\Debug\net8.0\Domain.pdb
+D:\.Проекты\FamilyArchive\Back-end\Archive_DbContext\obj\Debug\net8.0\Archive_.C5F0F0A1.Up2Date

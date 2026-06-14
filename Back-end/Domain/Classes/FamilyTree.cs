@@ -12,7 +12,7 @@ namespace Domain.Classes
         public Guid Id { get; }
         public string Title { get; } = string.Empty;
         public Guid MainUserId { get; }
-        public List<Guid> usersId { get; set; } = new List<Guid>();
+        public List<User> Users { get; set; } = new List<User>();
         public List<Person > Persons { get; set; } = new List<Person>();
 
         private FamilyTree(Guid id, string title, Guid mainUserId)
@@ -20,7 +20,6 @@ namespace Domain.Classes
             Id = id;
             Title = title;
             MainUserId = mainUserId;
-            usersId.Add(mainUserId);
         }
 
         public static (FamilyTree tree, string error) Create(Guid id, string title, Guid mainUserId)

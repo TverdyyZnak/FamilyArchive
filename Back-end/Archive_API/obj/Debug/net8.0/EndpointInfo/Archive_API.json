@@ -5,12 +5,443 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/api/Chapter": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "Chapter"
         ],
-        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Chapter"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChapterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChapterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChapterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Chapter"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChapterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChapterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChapterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Chapter"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Chapter/by-id": {
+      "get": {
+        "tags": [
+          "Chapter"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChapterResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/File": {
+      "get": {
+        "tags": [
+          "File"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "File"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "File"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "File"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/File/by-id": {
+      "get": {
+        "tags": [
+          "File"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -19,7 +450,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/PersonShortResponse"
                   }
                 }
               },
@@ -27,7 +458,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/PersonShortResponse"
                   }
                 }
               },
@@ -35,8 +466,924 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/PersonShortResponse"
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Person"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersonRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/by-id": {
+      "get": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonFullResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonFullResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonFullResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/father-id": {
+      "put": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "personId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "fatherId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/mother-id": {
+      "put": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "personId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "motherId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Person/add-chapter": {
+      "put": {
+        "tags": [
+          "Person"
+        ],
+        "parameters": [
+          {
+            "name": "personId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "chapterId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Tree": {
+      "get": {
+        "tags": [
+          "Tree"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TreeShortResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TreeShortResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TreeShortResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Tree"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreeRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreeRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Tree/by-id": {
+      "get": {
+        "tags": [
+          "Tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TreeFullResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TreeFullResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TreeFullResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Tree/by-user-id": {
+      "get": {
+        "tags": [
+          "Tree"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TreeShortResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TreeShortResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TreeShortResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Tree/add-user": {
+      "post": {
+        "tags": [
+          "Tree"
+        ],
+        "parameters": [
+          {
+            "name": "treeId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/by-id": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/by-login": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/reg": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/logout": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
                 }
               }
             }
@@ -47,23 +1394,314 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "ChapterRequest": {
         "type": "object",
         "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
+          "serial": {
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+          "title": {
+            "type": "string",
+            "nullable": true
           },
-          "summary": {
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "start": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "end": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChapterResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "serial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "start": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "end": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FileRequest": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FileResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonFullResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "biography": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "death": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "chapters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChapterResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonRequest": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "biography": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "death": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersonShortResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "biography": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "death": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreeFullResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "mainUserId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserResponse"
+            },
+            "nullable": true
+          },
+          "persons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PersonFullResponse"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreeRequest": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "mainUserId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreeShortResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "mainUserId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserRequest": {
+        "type": "object",
+        "properties": {
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
             "type": "string",
             "nullable": true
           }
