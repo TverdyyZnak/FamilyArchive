@@ -11,7 +11,7 @@ namespace Domain.Classes
     {
         public Guid Id { get; }
         public string Login { get; } = string.Empty;
-        public string Password { get; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
         public string Email { get; } = string.Empty;
 
         private User(Guid id, string login, string password, string email)

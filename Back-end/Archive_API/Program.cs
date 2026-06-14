@@ -1,3 +1,4 @@
+using Application.Functions;
 using Archive_DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -17,6 +18,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(config.GetConnectionString(nameof(AppDbContext)), new MySqlServerVersion(new Version(8, 0, 0)));
 });
 
+
+builder.Services.AddScoped<JWTFunc>();
+builder.Services.AddScoped<HashPassword>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,6 +33,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

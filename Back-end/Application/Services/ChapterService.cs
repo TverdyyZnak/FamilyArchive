@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class ChapterService
+    public class ChapterService : IChapterService
     {
         private readonly IChapterRepository _repository;
 

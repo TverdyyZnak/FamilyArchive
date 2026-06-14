@@ -8,5 +8,6 @@ namespace Archive_DbContext.Repositories
         Task<Guid> Delete(Guid id);
         Task<List<User>> GetAll();
         Task<User?> GetById(Guid id);
+        Task<User?> GetByLogin(string login);
     }
 }
