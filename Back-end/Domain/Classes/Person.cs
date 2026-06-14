@@ -24,6 +24,8 @@ namespace Domain.Classes
             LastName = lastName;
             Surname = surname;
             ShortBiography = shortBiography;
+            Birthday = birthday;
+            DayOfDeath = death;
             FatherId = father;
             MotherId = mother;
         }
