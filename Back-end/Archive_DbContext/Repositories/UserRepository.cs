@@ -32,6 +32,15 @@ namespace Archive_DbContext.Repositories
             return user;
         }
 
+        public async Task<User?> GetByLogin(string login)
+        {
+            var userEntity = await _context.User.AsNoTracking().FirstOrDefaultAsync(u => u.Login == login);
+            if (userEntity == null) { return null; }
+            var user = User.Create(userEntity.Id, userEntity.Login, userEntity.Password, userEntity.Email).user;
+            return user;
+        }
+
+
         public async Task<Guid> CreateNewUser(User user)
         {
             UserEntity entity = new UserEntity
