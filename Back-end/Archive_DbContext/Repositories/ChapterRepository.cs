@@ -51,11 +51,6 @@ namespace Archive_DbContext.Repositories
                 EndDate = chapter.EndDate,
             };
 
-            var fileIds = chapter.Files.Select(f => f.Id).ToList();
-            entity.Files = await _context.File
-                .Where(file => fileIds.Contains(file.Id))
-                .ToListAsync();
-
             await _context.Chapter.AddAsync(entity);
             await _context.SaveChangesAsync();
 
