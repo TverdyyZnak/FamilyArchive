@@ -6,13 +6,19 @@
       "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\familytreerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\fileresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\familytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\familytreeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\chapterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -22,9 +28,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\entities\\personentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1A0A5F3-BB88-4E89-8C0B-88644C671A5B}|..\\Archive_DbContext\\Archive_DbContext.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\archive_dbcontext\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -63,9 +66,6 @@
       "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\params.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\fileresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{626435C6-9E0D-44E2-B4C6-56C0CFFC87A0}|..\\Domain\\Domain.csproj|d:\\.\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\familyarchive\\back-end\\domain\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -96,29 +96,29 @@
               "Title": "FamilyTreeRepository.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
-              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs*",
-              "RelativeToolTip": "..\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAewEAAAAAWAAAAAAAAAA==",
+              "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
+              "RelativeToolTip": "..\\Archive_DbContext\\Repositories\\FamilyTreeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T08:19:33.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PersonRepository.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\PersonRepository.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\PersonRepository.cs",
               "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\PersonRepository.cs",
               "RelativeToolTip": "..\\Archive_DbContext\\Repositories\\PersonRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAuwHsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-13T17:36:13.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\UserRepository.cs",
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IFileRepository.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Interfaces\\IFileRepository.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IFileRepository.cs",
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ChapterRepository.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\ChapterRepository.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\ChapterRepository.cs",
@@ -155,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FileRepository.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Repositories\\FileRepository.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Repositories\\FileRepository.cs",
@@ -167,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -179,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Archive_API.csproj",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
               "RelativeDocumentMoniker": "Archive_API.csproj",
@@ -191,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -203,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ChapterEntity.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\ChapterEntity.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\ChapterEntity.cs",
@@ -215,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FamilyTreeEntity.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\FamilyTreeEntity.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\FamilyTreeEntity.cs",
@@ -228,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "PersonEntity.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\PersonEntity.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\PersonEntity.cs",
@@ -240,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\Entities\\UserEntity.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\Entities\\UserEntity.cs",
@@ -252,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Archive_DbContext\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\Archive_DbContext\\AppDbContext.cs",
@@ -264,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FamilyTree.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\FamilyTree.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Classes\\FamilyTree.cs",
@@ -277,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 3,
               "Title": "FileResource.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\FileResource.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Classes\\FileResource.cs",
@@ -285,19 +285,21 @@
               "RelativeToolTip": "..\\Domain\\Classes\\FileResource.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:04:04.3Z"
+              "WhenOpened": "2026-06-12T15:04:04.3Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Person.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Person.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Classes\\Person.cs",
               "ToolTip": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Person.cs",
               "RelativeToolTip": "..\\Domain\\Classes\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowAkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T15:03:42.046Z"
+              "WhenOpened": "2026-06-12T15:03:42.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -313,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Params.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Params.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Params.cs",
@@ -325,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IEntity.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Interfaces\\IEntity.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IEntity.cs",
@@ -337,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Chapter.cs",
               "DocumentMoniker": "D:\\.\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\FamilyArchive\\Back-end\\Domain\\Classes\\Chapter.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Classes\\Chapter.cs",
