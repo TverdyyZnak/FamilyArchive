@@ -1,0 +1,215 @@
+main {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-image: url('/back/BackRep.webp');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    section {
+
+        margin-top: 150px;
+        margin-bottom: 40px;
+        width: 80%;
+        min-height: 70%;
+        background-color: #ecccaa67;
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        border: solid 2px #475631;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+
+        padding: 5px 20px 5px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .person-info {
+            margin-top: 10px;
+            display: flex;
+            width: 95%;
+            height: 40%;
+            border-radius: 15px;
+            border: solid 2px #475631;
+
+            img {
+                max-width: 30%;
+                border-radius: 15px;
+                border-right: solid 2px #475631;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                padding-top: 25px;
+                margin-left: 25px;
+
+
+                .full-name {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: end;
+                    height: 52px;
+
+                    p {
+                        font-size: 44px;
+                        margin-right: 25px;
+
+                        b {
+                            font-size: 52px;
+                        }
+                    }
+                }
+
+                .person-biography {
+                    p {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+
+        .chapters {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            width: 95%;
+            height: auto;
+            min-height: 250px;
+            border-radius: 15px;
+            border: solid 2px #475631;
+
+            display: flex;
+            flex-direction: column;
+
+            .buttons {
+
+                height: 150px;
+                padding: 25px;
+                display: flex;
+                border-bottom: solid 2px #475631;
+                flex-direction: column;
+
+                button {
+                    width: 30%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .chapters-list {
+
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .chapter-card {
+                    margin: 10px 0 10px 0;
+                    width: 90%;
+                    border: solid 2px #475631;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+                    padding: 20px;
+
+                }
+            }
+        }
+
+    }
+}
+
+.add-chapter {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        width: 60%;
+        height: 80%;
+        background-color: #fff3d8;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        border: solid 2px #475631;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
+
+        textarea {
+            height: 50%;
+            width: 85%;
+            resize: none;
+        }
+
+        div {
+            margin-top: 20px;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+
+    p {
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+}
+
+.main-button {
+    font-family: 'MainFont';
+    font-size: 40px;
+    cursor: pointer;
+
+
+    padding: 10px 30px 10px 30px;
+    color: #fff3d8;
+    background-color: #475631;
+    border-radius: 10px;
+    border: #475631 solid 2px;
+    transition: all 0.3s ease;
+}
+
+.main-button:hover {
+    background-color: #fff3d8;
+    color: #475631;
+}
+
+.sub-button {
+    cursor: pointer;
+    font-size: 36px;
+    background-color: #ffffff00;
+    padding: 10px 20px 10px 20px;
+    border: solid 2px #475631;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sub-button:hover {
+    background-color: #fff3d8;
+}

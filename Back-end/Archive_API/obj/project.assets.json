@@ -1093,7 +1093,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Archive_DbContext": "1.0.0",
           "BCrypt.Net-Next": "4.2.0",
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
@@ -3105,11 +3104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
+      "projectUniqueName": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
       "projectName": "Archive_API",
-      "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
+      "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\obj\\",
+      "outputPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3124,20 +3123,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj": {
-              "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj"
+            "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj": {
+              "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj"
             },
-            "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
-              "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj"
+            "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
+              "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj"
             },
-            "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
+            "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
             }
           }
         }

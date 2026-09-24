@@ -12,9 +12,11 @@ namespace Archive_API.Controllers
     public class PersonController : ControllerBase
     {
         private readonly IPersonService _service;
-        public PersonController(IPersonService personService)
+        private readonly IFamilyTreeService _familyTreeService;
+        public PersonController(IPersonService personService, IFamilyTreeService familyTreeService)
         {
             _service = personService;
+            _familyTreeService = familyTreeService;
         }
 
         [HttpGet]
@@ -57,7 +59,7 @@ namespace Archive_API.Controllers
             return Ok(resp);
         }
 
-        [HttpPut("mother-id")]
+        [HttpPut("{personId:guid}/mother/{motherId:guid}")]
         public async Task<ActionResult<Guid>> UpdateMotherId(Guid personId, Guid motherId)
         {
             Guid resp = await _service.UpdateMotherId(personId, motherId);
@@ -65,7 +67,7 @@ namespace Archive_API.Controllers
             return Ok(resp);
         }
 
-        [HttpPut("add-chapter")]
+        [HttpPut("{personId:guid}/chapter/{chapterId:guid}")]
         public async Task<ActionResult<Guid>> AddChapter(Guid personId, Guid chapterId)
         {
             Guid resp = await _service.AddChapter(personId, chapterId);
@@ -73,11 +75,20 @@ namespace Archive_API.Controllers
             return Ok(resp);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Guid>> CreateNewPerson([FromBody] PersonRequest request)
+        [HttpPost("{archiveId:guid}")]
+        public async Task<ActionResult<Guid>> CreateNewPerson(Guid archiveId, [FromBody] PersonRequest request)
         {
+            var familyTree = _familyTreeService.GetTreeById(archiveId);
+            if (familyTree == null)
+            {
+                BadRequest("Архива с данным Id не существует");
+            }
+
             var (person, error) = Person.Create(Guid.NewGuid(), request.firstName, request.lastName, request.surname, request.biography, request.birthday, request.death, null, null);
             if(error != string.Empty) { return BadRequest(error); }
+
+            person.Archive = familyTree.Result;
+            person.ArchiveId = archiveId;
 
             return Ok(await _service.CreateNewPerson(person));
         }

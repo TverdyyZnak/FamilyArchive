@@ -1,13 +1,5 @@
-﻿using Archive_DbContext.Entities;
-using Archive_DbContext.Repositories;
+﻿using Archive_DbContext.Repositories;
 using Domain.Classes;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {

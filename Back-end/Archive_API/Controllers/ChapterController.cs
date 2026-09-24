@@ -11,10 +11,12 @@ namespace Archive_API.Controllers
     public class ChapterController : ControllerBase
     {
         private readonly IChapterService _service;
+        private readonly IPersonService _personService;
 
-        public ChapterController(IChapterService chapterService)
+        public ChapterController(IChapterService chapterService, IPersonService personService)
         {
             _service = chapterService;
+            _personService = personService;
         }
 
         [HttpGet]
@@ -25,37 +27,46 @@ namespace Archive_API.Controllers
             {
                 var chapter = new ChapterResponse(c.Id, c.SerialNumber, c.Title, c.Description, c.StartDate, c.EndDate,
                     c.Files.Select(f => new FileResponse(f.Id, f.Title, f.ResourceUrl)).ToList());
-                
+
                 return chapter;
             }).ToList();
 
             return Ok(resp);
         }
 
-        [HttpGet("by-id")]
+        [HttpGet("{id:guid}")]
         public async Task<ActionResult<ChapterResponse>> GetChapterById(Guid id)
         {
             var c = await _service.GetChapterById(id);
-            if(c == null) { return BadRequest("Главы с данным id не существует"); }
+            if (c == null) { return BadRequest("Главы с данным id не существует"); }
             var resp = new ChapterResponse(c.Id, c.SerialNumber, c.Title, c.Description, c.StartDate, c.EndDate,
                     c.Files.Select(f => new FileResponse(f.Id, f.Title, f.ResourceUrl)).ToList());
 
             return Ok(resp);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Guid>> CreateNewChapter([FromBody] ChapterRequest request)
+        [HttpPost("new/{personId:guid}")]
+        public async Task<ActionResult<Guid>> CreateNewChapter(Guid personId, [FromBody] ChapterRequest request)
         {
+            var personEntity = await _personService.GetPersonById(personId);
+
             var (chapter, error) = Chapter.Create(Guid.NewGuid(), request.serial, request.title, request.description, request.start, request.end);
             if (error != string.Empty) { return BadRequest(error); }
 
-            return Ok(await _service.CreateNewChapter(chapter));
+            chapter.Person = personEntity;
+            chapter.PersonId = personId;
+
+            Guid newChapterId = await _service.CreateNewChapter(chapter);
+            Console.WriteLine(newChapterId.ToString());
+            await _personService.AddChapter(personId, newChapterId);
+
+            return Ok();
         }
 
-        [HttpPut]
-        public async Task<ActionResult<Guid>> UpdateChapter(Guid id, [FromBody] ChapterRequest request)
+        [HttpPut("{chapterId:guid}")]
+        public async Task<ActionResult<Guid>> UpdateChapter([FromRoute] Guid chapterId, [FromBody] ChapterRequest request)
         {
-            Guid resp = await _service.UpdateChapter(id, request.serial, request.title, request.description, request.start, request.end);
+            Guid resp = await _service.UpdateChapter(chapterId, request.serial, request.title, request.description, request.start, request.end);
             if (resp == Guid.Empty) { return BadRequest("Главы с данным id не существует"); }
             return Ok(resp);
         }

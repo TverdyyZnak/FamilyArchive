@@ -1,12 +1,5 @@
-﻿using Archive_DbContext.Entities;
-using Archive_DbContext.Repositories;
+﻿using Archive_DbContext.Repositories;
 using Domain.Classes;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
@@ -48,9 +41,16 @@ namespace Application.Services
             return await _repository.AddUser(treeId, userId);
         }
 
+        
+
         public async Task<Guid> DeleteTree(Guid id)
         {
             return await _repository.Delete(id);
+        }
+
+        public async Task<Guid> AddPersonToTree(Guid treeId, Guid personId)
+        {
+            return await _repository.AddPerson(treeId, personId);
         }
     }
 }

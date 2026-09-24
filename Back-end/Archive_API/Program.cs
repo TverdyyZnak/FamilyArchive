@@ -19,6 +19,17 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(config.GetConnectionString(nameof(AppDbContext)), new MySqlServerVersion(new Version(8, 0, 0)));
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AngularApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
@@ -39,7 +50,6 @@ builder.Services.AddScoped<HashPassword>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -47,6 +57,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AngularApp");
 
 app.UseAuthentication();
 app.UseAuthorization();

@@ -15,6 +15,8 @@ namespace Domain.Classes
         public DateOnly? DayOfDeath { get; set; } = null;
         public Guid? FatherId { get; set; } = null;
         public Guid? MotherId { get; set; } = null;
+        public Guid ArchiveId { get; set; } = Guid.Empty;
+        public FamilyTree? Archive { get; set; }
         public List<Chapter> Chapters { get; set; } = new List<Chapter>();
         private Person(Guid id, string firstName, string lastName, string surname, 
                         string shortBiography, DateOnly? birthday = null, DateOnly? death = null, Guid? father = null, Guid? mother = null)

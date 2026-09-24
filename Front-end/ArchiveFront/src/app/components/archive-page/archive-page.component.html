@@ -1,0 +1,115 @@
+<main>
+    <section>
+        <article class="persons">
+            <p style="width: 100%; text-align: center; margin: 15px 0px 10px 0px;">Архив: {{tree?.title}}</p>
+            <div class="person-list">
+                @for (person of tree?.persons; track $index)
+                {
+                <div class="person-card" (click)="ToPerson(person.id)">
+                    <img src="/assets/Mill.webp">
+                    <div class="text-info">
+                        <p class="name"><b>{{person.lastName}} </b>{{person.firstName}} {{person.surname}}</p>
+                        <div class="timeline">
+                            @if (person.birthday == null)
+                            {
+                                <p>Дата рождения не известна</p>
+                            }
+                            @else
+                            {
+                                <p>{{person.birthday}}</p>
+                            }
+                            <p style="margin-right: 50px;"> — </p>
+                            @if (person.death == null)
+                            {
+                                <p>Дата смерти не известна</p>
+                            }
+                            @else
+                            {
+                                <p>{{person.death}}</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+                }
+
+            </div>
+        </article>
+        <article class="infos">
+            @if (isAdmin)
+            {
+            <button class="main-button" style="width: 70%;" (click)="addPersonIsOpen = true">
+                <p>Добавить человека</p>
+                <p class="plus">+</p>
+            </button>
+            <button class="main-button" style="width: 70%;" (click)="addUserIsOpen = true">Пригласить пользователя</button>
+            <button class="main-button" style="background-color: rgb(255, 0, 0); transition: all 0.2s ease;" (click)="Delete()">Удалить архив</button>
+            }
+            @else{
+            <p style="text-align: center;">Управлять архивом может только пользователь-администратор!</p>
+            }
+            <div class="users">
+                <div>
+
+                    <p><b>Статус: </b>@if(isAdmin){Администратор}@else{Гость}</p>
+                    <p><b>Кол-во пользователей: </b>{{tree?.users?.length}}</p>
+                    <p class="list-title"><b>Список пользователей</b></p>
+                </div>
+                <div class="user-list">
+                    @for (user of tree?.users; track $index)
+                    {
+                    <div class="user-card">
+                        <img src="/assets/VillageHouse.webp">
+                        <p>{{user.login}}</p>
+                        @if (isAdmin)
+                        {
+                        <button class="main-button">X</button>
+                        }
+                    </div>
+                    }
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
+@if(addUserIsOpen)
+{
+    <section class="add-user">
+        <article>
+            <i>Введите ID пользователя</i>
+            <input type="text" #inputUserId>
+            <div>
+                <button class="sub-button" (click)="addUserIsOpen = false">Отмена</button>
+                <button class="main-button" (click)="AddUser(inputUserId.value)">Добавить пользователя</button>
+            </div>
+        </article>
+    </section>
+}
+
+@if(addPersonIsOpen) 
+{
+    <section class="add-person">
+        <article>
+            <p>Фамилия</p>
+            <input type="text" #iLN>
+            <p>Имя</p>
+            <input type="text" #iFN>
+            <p>Отчество</p>
+            <input type="text" #iSU>
+            <p>Короткая биография</p>
+            <textarea #iBY></textarea>
+            <p>Дата рождения</p>
+            <input type="date" #iBI>
+            <p>Дата смерти</p>
+            <input type="date" #iDE>
+            <div>
+                <button class="sub-button" (click)="addPersonIsOpen = false" style="margin: 15px 20px 0 0">Отмена</button>
+                <button 
+                class="main-button"
+                (click)="AddPerson(iFN.value, iLN.value, iSU.value, iBY.value, iBI.value, iDE.value)">
+                    Добавить пользователя
+                </button>
+            </div>
+        </article>
+    </section>
+}
