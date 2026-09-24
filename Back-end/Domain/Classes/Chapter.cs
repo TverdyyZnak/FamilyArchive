@@ -15,6 +15,8 @@ namespace Domain.Classes
         public string Description { get; } = string.Empty;
         public DateOnly? StartDate { get; } = null;
         public DateOnly? EndDate { get; } = null;
+        public Person? Person { get; set; } = null;
+        public Guid PersonId { get; set; } = Guid.Empty;
         public List<FileResource> Files { get; set; } = new List<FileResource>();
             
 

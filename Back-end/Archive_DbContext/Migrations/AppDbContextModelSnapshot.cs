@@ -32,7 +32,7 @@ namespace Archive_DbContext.Migrations
                     b.Property<DateOnly?>("EndDate")
                         .HasColumnType("date");
 
-                    b.Property<Guid?>("PersonEntityId")
+                    b.Property<Guid>("PersonId")
                         .HasColumnType("char(36)");
 
                     b.Property<int>("SerialNumber")
@@ -47,7 +47,7 @@ namespace Archive_DbContext.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PersonEntityId");
+                    b.HasIndex("PersonId");
 
                     b.ToTable("Chapter");
                 });
@@ -66,6 +66,8 @@ namespace Archive_DbContext.Migrations
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MainUserId");
 
                     b.ToTable("FamilyTree");
                 });
@@ -100,14 +102,14 @@ namespace Archive_DbContext.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<Guid>("ArchiveId")
+                        .HasColumnType("char(36)");
+
                     b.Property<DateOnly?>("Birthday")
                         .HasColumnType("date");
 
                     b.Property<DateOnly?>("DayOfDeath")
                         .HasColumnType("date");
-
-                    b.Property<Guid?>("FamilyTreeEntityId")
-                        .HasColumnType("char(36)");
 
                     b.Property<Guid?>("FatherId")
                         .HasColumnType("char(36)");
@@ -136,7 +138,7 @@ namespace Archive_DbContext.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FamilyTreeEntityId");
+                    b.HasIndex("ArchiveId");
 
                     b.ToTable("Person");
                 });
@@ -151,9 +153,6 @@ namespace Archive_DbContext.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<Guid?>("FamilyTreeEntityId")
-                        .HasColumnType("char(36)");
-
                     b.Property<string>("Login")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -164,16 +163,42 @@ namespace Archive_DbContext.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FamilyTreeEntityId");
-
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("FamilyTreeEntityUserEntity", b =>
+                {
+                    b.Property<Guid>("FamilyTreesId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("UsersId")
+                        .HasColumnType("char(36)");
+
+                    b.HasKey("FamilyTreesId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("FamilyTreeUsers", (string)null);
                 });
 
             modelBuilder.Entity("Archive_DbContext.Entities.ChapterEntity", b =>
                 {
-                    b.HasOne("Archive_DbContext.Entities.PersonEntity", null)
+                    b.HasOne("Archive_DbContext.Entities.PersonEntity", "Person")
                         .WithMany("Chapters")
-                        .HasForeignKey("PersonEntityId");
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Person");
+                });
+
+            modelBuilder.Entity("Archive_DbContext.Entities.FamilyTreeEntity", b =>
+                {
+                    b.HasOne("Archive_DbContext.Entities.UserEntity", null)
+                        .WithMany("OwnedTrees")
+                        .HasForeignKey("MainUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Archive_DbContext.Entities.FileResourceEntity", b =>
@@ -185,16 +210,28 @@ namespace Archive_DbContext.Migrations
 
             modelBuilder.Entity("Archive_DbContext.Entities.PersonEntity", b =>
                 {
-                    b.HasOne("Archive_DbContext.Entities.FamilyTreeEntity", null)
+                    b.HasOne("Archive_DbContext.Entities.FamilyTreeEntity", "FamilyTree")
                         .WithMany("Persons")
-                        .HasForeignKey("FamilyTreeEntityId");
+                        .HasForeignKey("ArchiveId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("FamilyTree");
                 });
 
-            modelBuilder.Entity("Archive_DbContext.Entities.UserEntity", b =>
+            modelBuilder.Entity("FamilyTreeEntityUserEntity", b =>
                 {
                     b.HasOne("Archive_DbContext.Entities.FamilyTreeEntity", null)
-                        .WithMany("usersId")
-                        .HasForeignKey("FamilyTreeEntityId");
+                        .WithMany()
+                        .HasForeignKey("FamilyTreesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Archive_DbContext.Entities.UserEntity", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Archive_DbContext.Entities.ChapterEntity", b =>
@@ -205,13 +242,16 @@ namespace Archive_DbContext.Migrations
             modelBuilder.Entity("Archive_DbContext.Entities.FamilyTreeEntity", b =>
                 {
                     b.Navigation("Persons");
-
-                    b.Navigation("usersId");
                 });
 
             modelBuilder.Entity("Archive_DbContext.Entities.PersonEntity", b =>
                 {
                     b.Navigation("Chapters");
+                });
+
+            modelBuilder.Entity("Archive_DbContext.Entities.UserEntity", b =>
+                {
+                    b.Navigation("OwnedTrees");
                 });
 #pragma warning restore 612, 618
         }

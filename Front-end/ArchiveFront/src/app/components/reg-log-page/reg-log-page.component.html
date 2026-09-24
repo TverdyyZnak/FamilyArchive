@@ -1,0 +1,39 @@
+<main>
+    <section >
+        <img src="assets/village.webp" [@switcherAnim]="switcher == 0 ? 'left' : 'right'">
+        @if(switcher == 0)
+        {
+            <div class="login-div" @fade>
+                <h1>Вход в систему</h1>
+                <div>
+                    <p>Логин</p>
+                    <input type="text" #loginInput placeholder="Ваш логин">
+                    <p>Пароль</p>
+                    <input type="password" #passInput placeholder="Ваш пароль">
+                </div>
+                <button (click)="userLogin(loginInput.value, passInput.value)">Войти</button>
+                <p>Нет аккаунта?</p>
+                <p (click)="switcher = 1" class="line-p">Создай его тут</p>
+            </div>
+        }
+        @else 
+        {
+            <div class="reg-div" @fade>
+                <h1>Регистрация</h1>
+                <div>
+                    <p>Логин</p>
+                    <input #loginInputReg placeholder="Ваш логин">
+                    <p>Электронная почта</p>
+                    <input #emailInput type="email" placeholder="Ваша электронная почта">
+                    <p>Пароль</p>
+                    <input #inputPassOne type="password" placeholder="Ваш пароль">
+                    <p>Повторите Пароль</p>
+                    <input #inputPassTwo type="password" placeholder="Повторите Ваш пароль">
+                </div>
+                <button (click)="regLogin(loginInputReg.value, emailInput.value, inputPassOne.value,inputPassTwo.value)">Зарегистрироваться</button>
+                <p>Уже есть аккаунт?</p>
+                <p (click)="switcher = 0" class="line-p">Войди в него тут</p>
+            </div>
+        }
+    </section>
+</main>

@@ -1,0 +1,61 @@
+<main>
+    <section class="left-section">
+        <article class="info-part">
+            <div class="user-info">
+                <div>
+                    <h1>Добро пожаловать, {{user?.Login}}!</h1>
+                    <p>"Тут будут кастомные надписи в профиле"</p>
+                </div>
+                <img src="assets/VillageHouse.webp">
+            </div>
+            <p>Ваш ID: {{user?.Id}}</p>
+            <nav>
+                <a class="sub-button">Статистика</a>
+                <a class="sub-button">Уведомления</a>
+                <a class="sub-button">История подписок</a>
+                <a class="sub-button">Настройки профиля</a>
+                <button class="main-button" (click)="exit()">Выйти</button>
+            </nav>
+        </article>
+        <article class="right-part">
+            <div class="top-info">
+                <h2>Список доступных архивов</h2>
+                <button class="main-button" (click)="createTreeIsOpen = true">Добавить архив</button>
+            </div>
+            <div class="tree-list">
+
+                @for (item of trees; track $index)
+                {
+                    <div class="card" (click)="goToArchive(item.id)">
+                        <img src="/assets/House.webp">
+                        <h1>{{item.title}}</h1>
+                        <div>
+                            <p>Члены семьи: </p>
+                            <p>Фотографии</p>
+                            <p>Документы</p>
+                        </div>
+                        <button class="main-button" (click)="goToArchive(item.id)">Вперёд</button>
+                    </div>
+                }
+            </div>
+        </article>
+    </section>
+</main>
+
+@if (createTreeIsOpen)
+{
+    <section class="create-panel">
+        <div class="panel">
+            <div class="tree-info">
+                <i>Тут можно будет выбрать картинку</i>
+
+                <p>Название нового архива</p>
+                <input type="text" #title>
+            </div>
+            <div class="buttons">
+                <button class="sub-button" (click)="createTreeIsOpen = false">Отмена</button>
+                <button class="main-button" (click)="createArchive(title.value)">Создать</button>
+            </div>
+        </div>
+    </section>
+}

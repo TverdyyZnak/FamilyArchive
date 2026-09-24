@@ -87,6 +87,15 @@ namespace Archive_API.Controllers
             return Ok(id);
         }
 
+        [HttpPost("add-person")]
+        public async Task<ActionResult<Guid>> AddPersonToTree(Guid treeId, Guid personId)
+        {
+            Guid id = await _treeService.AddPersonToTree(treeId, personId);
+            if (id == Guid.Empty) { return BadRequest("Человека или архива с данным id не существует"); }
+            return Ok(id);
+        }
+
+
         [HttpDelete]
         public async Task<ActionResult<Guid>> DeleteTree(Guid id)
         {

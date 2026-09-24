@@ -18,6 +18,8 @@ namespace Archive_DbContext.Entities
         public DateOnly? DayOfDeath { get; set; } = null;
         public Guid? FatherId { get; set; } = null;
         public Guid? MotherId { get; set; } = null;
+        public Guid ArchiveId { get; set; } = Guid.Empty;
+        public FamilyTreeEntity? FamilyTree { get; set; }
         public List<ChapterEntity> Chapters { get; set; } = new List<ChapterEntity>();
     }
 }

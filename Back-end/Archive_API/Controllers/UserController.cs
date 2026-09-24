@@ -46,9 +46,9 @@ namespace Archive_API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<string>> Login(string login, string password)
+        public async Task<ActionResult<string>> Login([FromBody] UserLogin userLogin)
         {
-            string resp = await _service.Login(login, password);
+            string resp = await _service.Login(userLogin.login, userLogin.password);
             if (resp == "Неверный логин или пароль") { return BadRequest("Неверный логин или пароль"); }
             return Ok();
         }

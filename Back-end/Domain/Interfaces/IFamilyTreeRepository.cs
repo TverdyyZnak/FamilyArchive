@@ -5,6 +5,7 @@ namespace Archive_DbContext.Repositories
     public interface IFamilyTreeRepository
     {
         Task<Guid> AddUser(Guid treeId, Guid userId);
+        Task<Guid> AddPerson(Guid treeId, Guid personId);
         Task<Guid> CreateNewTree(FamilyTree tree);
         Task<Guid> Delete(Guid id);
         Task<List<FamilyTree>> GetAll();

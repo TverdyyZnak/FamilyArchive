@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace Archive_DbContext.Entities
         public string Description { get; set; } = string.Empty;
         public DateOnly? StartDate { get; set; } = null;
         public DateOnly? EndDate { get; set; } = null;
+        public PersonEntity? Person { get; set; } = null;
+        public Guid PersonId { get; set; } = Guid.Empty;
         public List<FileResourceEntity> Files { get; set; } = new List<FileResourceEntity>();
     }
 }

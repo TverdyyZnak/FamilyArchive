@@ -58,8 +58,16 @@ namespace Archive_DbContext.Repositories
 
         public async Task<List<FamilyTree>> GetByUserId(Guid userId)
         {
-            var treeEntities = await _context.FamilyTree.Where(t => t.MainUserId == userId).AsNoTracking().ToListAsync();
+            var userEntity = await _context.User.FirstOrDefaultAsync(u => u.Id == userId);
+            if (userEntity == null) 
+            {
+                return new List<FamilyTree>();
+            }
+            var treeEntities = await _context.FamilyTree.Where(t => t.Users.Contains(userEntity)).AsNoTracking().ToListAsync();
             var trees = treeEntities.Select(t => FamilyTree.Create(t.Id, t.Title, t.MainUserId).tree).ToList();
+
+            
+
             return trees;
         }
 
@@ -77,6 +85,7 @@ namespace Archive_DbContext.Repositories
                 Id = tree.Id,
                 Title = tree.Title,
                 MainUserId = tree.MainUserId
+                
             };
 
             await _context.FamilyTree.AddAsync(entity);
@@ -96,6 +105,26 @@ namespace Archive_DbContext.Repositories
             if (!tree.Users.Contains(user))
             {
                 tree.Users.Add(user);
+                await _context.SaveChangesAsync();
+                return tree.Id;
+            }
+            else
+            {
+                return tree.Id;
+            }
+        }
+
+        public async Task<Guid> AddPerson(Guid treeId, Guid personId)
+        {
+            var tree = await _context.FamilyTree.FirstOrDefaultAsync(t => t.Id == treeId);
+            if (tree == null) { return Guid.Empty; }
+
+            var person = await _context.Person.FirstOrDefaultAsync(p => p.Id == personId);
+            if (person == null) { return Guid.Empty; }
+
+            if (!tree.Persons.Contains(person))
+            {
+                tree.Persons.Add(person);
                 await _context.SaveChangesAsync();
                 return tree.Id;
             }
