@@ -50,6 +50,11 @@ namespace Archive_DbContext.Repositories
 
         public async Task<Guid> CreateNewPerson(Person person)
         {
+            var treeEntity = _context.FamilyTree.FirstOrDefaultAsync(t => t.Id == person.ArchiveId);
+            if (treeEntity == null)
+            {
+                return Guid.Empty;
+            }
             PersonEntity entity = new PersonEntity
             {
                 Id = person.Id,
@@ -61,6 +66,8 @@ namespace Archive_DbContext.Repositories
                 DayOfDeath = person.DayOfDeath,
                 FatherId = person.FatherId,
                 MotherId = person.MotherId,
+                ArchiveId = person.ArchiveId,
+                FamilyTree = treeEntity.Result
             };
 
             await _context.Person.AddAsync(entity);

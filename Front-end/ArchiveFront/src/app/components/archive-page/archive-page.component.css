@@ -1,0 +1,341 @@
+main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/back/Back3.webp');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        margin-top: 5%;
+        width: 70%;
+        height: 80%;
+        background-color: #ecccaa67;
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        border: solid 2px #475631;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+
+        padding: 5px 20px 5px 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .persons {
+            width: 60%;
+            height: 95%;
+            border: solid 2px #475631;
+            border-radius: 15px;
+
+            .person-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 90%;
+                border-top: solid 2px #475631;
+                padding-top: 15px;
+
+                overflow: hidden;
+                overflow-y: scroll;
+
+                .person-card {
+                    width: 95%;
+                    height: 200px;
+                    padding: 5px;
+                    border: solid 2px #475631;
+                    border-radius: 15px;
+
+                    margin-bottom: 20px;
+                    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+
+                    .text-info {
+                        width: 75%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        .name {
+                            font-size: 32px;
+
+                            b {
+                                font-size: 40px;
+                            }
+                        }
+
+                        .timeline {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            
+                            p{
+                                margin-top: 40px;
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+
+                    img {
+                        height: 90%;
+                        border: solid 2px #475631;
+                        border-radius: 10px;
+                        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.459);
+                    }
+                }
+
+                .person-card:hover{
+                    transform: translateY(-5px);
+                }
+            }
+
+            .person-list::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            .person-list::-webkit-scrollbar-track {
+                background: #f1f1f100;
+                border: solid 2px #354124;
+                border-radius: 5px;
+            }
+
+            .person-list::-webkit-scrollbar-thumb {
+                background: #475631;
+                border-radius: 5px;
+            }
+
+            .person-list::-webkit-scrollbar-thumb:hover {
+                background: #354124;
+            }
+        }
+
+        .infos {
+            width: 35%;
+            height: 95%;
+            border: solid 2px #475631;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+
+            .users {
+                width: 85%;
+                height: 75%;
+                padding: 10px;
+                border: solid 2px #475631;
+                border-radius: 15px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .list-title {
+                    margin-top: 15px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .user-list {
+                    margin-top: 15px;
+                    width: 90%;
+                    height: 70%;
+                    border: solid 2px #475631;
+                    border-radius: 10px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 10px;
+
+                    overflow: hidden;
+                    overflow-y: scroll;
+
+                    .user-card {
+                        margin-top: 10px;
+                        width: 90%;
+                        height: 100px;
+                        border: solid 2px #475631;
+                        border-radius: 10px;
+                        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432);
+                        padding-left: 5px;
+                        padding-right: 5px;
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        img {
+                            height: 75%;
+                            border-radius: 5px;
+                            border: solid 2px #475631;
+                        }
+
+                        button {
+                            background-color: #ff0000;
+                            transition: all 0.2s ease;
+                        }
+                    }
+                }
+
+                .user-list::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                .user-list::-webkit-scrollbar-track {
+                    background: #f1f1f100;
+                    border: solid 2px #354124;
+                    border-radius: 5px;
+                }
+
+                .user-list::-webkit-scrollbar-thumb {
+                    background: #475631;
+                    border-radius: 5px;
+                }
+
+                .user-list::-webkit-scrollbar-thumb:hover {
+                    background: #354124;
+                }
+
+
+
+            }
+
+            .main-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 5px 10px 5px 10px;
+
+                p {
+                    color: #fff3d8;
+                }
+
+                .plus {
+                    margin-left: 20px;
+                }
+            }
+
+            .main-button:hover {
+                p {
+                    color: #475631;
+                }
+            }
+        }
+    }
+}
+
+.main-button {
+    font-family: 'MainFont';
+    cursor: pointer;
+    color: #fff3d8;
+    background-color: #475631;
+    border-radius: 10px;
+    border: #475631 solid 2px;
+    transition: all 0.5s ease;
+}
+
+.main-button:hover {
+    background-color: #fff3d8;
+    color: #475631;
+}
+
+.sub-button {
+    cursor: pointer;
+    background-color: #ffffff00;
+    border: solid 2px #475631;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sub-button:hover {
+    background-color: #fff3d8;
+}
+
+.add-user{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    article{
+        width: 30%;
+        height: 20%;
+        background-color: #e5d5c2c9;
+        border: solid 2px #475631;
+        border-radius: 20px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        input{
+            margin-top: 5px;
+            margin-bottom: 40px;
+        }
+
+        div{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button{
+                padding: 5px 10px 5px 10px;
+            }
+        }
+    }
+}
+
+.add-person{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    article{
+        width: 40%;
+        height: 70%;
+        background-color: #e5d5c2c9;
+        border: solid 2px #475631;
+        border-radius: 20px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        textarea{
+            width: 80%;
+            height: 50%;
+            resize: none;
+
+        }
+    }
+
+}

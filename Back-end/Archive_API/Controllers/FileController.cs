@@ -21,7 +21,7 @@ namespace Archive_API.Controllers
         {
             return Ok(await _service.GetAllFiles());
         }
-        [HttpGet("by-id")]
+        [HttpGet("{id:guid}")]
         public async Task<ActionResult<FileResponse>> GetFileById(Guid id)
         {
             var file = await _service.GetFileById(id); 

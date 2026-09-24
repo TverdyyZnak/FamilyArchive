@@ -21,63 +21,6 @@
   },
   {
     "ContainingType": "Archive_API.Controllers.ChapterController",
-    "Method": "CreateNewChapter",
-    "RelativePath": "api/Chapter",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Archive_API.Contracts.ChapterContracts.ChapterRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Guid",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Archive_API.Controllers.ChapterController",
-    "Method": "UpdateChapter",
-    "RelativePath": "api/Chapter",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "request",
-        "Type": "Archive_API.Contracts.ChapterContracts.ChapterRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Guid",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Archive_API.Controllers.ChapterController",
     "Method": "DeleteChapter",
     "RelativePath": "api/Chapter",
     "HttpMethod": "DELETE",
@@ -104,8 +47,39 @@
   },
   {
     "ContainingType": "Archive_API.Controllers.ChapterController",
+    "Method": "UpdateChapter",
+    "RelativePath": "api/Chapter/{chapterId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chapterId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Archive_API.Contracts.ChapterContracts.ChapterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Archive_API.Controllers.ChapterController",
     "Method": "GetChapterById",
-    "RelativePath": "api/Chapter/by-id",
+    "RelativePath": "api/Chapter/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -113,12 +87,43 @@
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
         "Type": "Archive_API.Contracts.ChapterContracts.ChapterResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Archive_API.Controllers.ChapterController",
+    "Method": "CreateNewChapter",
+    "RelativePath": "api/Chapter/new/{personId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Archive_API.Contracts.ChapterContracts.ChapterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -234,7 +239,7 @@
   {
     "ContainingType": "Archive_API.Controllers.FileController",
     "Method": "GetFileById",
-    "RelativePath": "api/File/by-id",
+    "RelativePath": "api/File/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -242,7 +247,7 @@
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -310,32 +315,6 @@
   },
   {
     "ContainingType": "Archive_API.Controllers.PersonController",
-    "Method": "CreateNewPerson",
-    "RelativePath": "api/Person",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Archive_API.Contracts.PersonContracts.PersonRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Guid",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Archive_API.Controllers.PersonController",
     "Method": "DeletePerson",
     "RelativePath": "api/Person",
     "HttpMethod": "DELETE",
@@ -362,8 +341,39 @@
   },
   {
     "ContainingType": "Archive_API.Controllers.PersonController",
+    "Method": "CreateNewPerson",
+    "RelativePath": "api/Person/{archiveId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "archiveId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Archive_API.Contracts.PersonContracts.PersonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Archive_API.Controllers.PersonController",
     "Method": "AddChapter",
-    "RelativePath": "api/Person/add-chapter",
+    "RelativePath": "api/Person/{personId}/chapter/{chapterId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -371,12 +381,43 @@
       {
         "Name": "personId",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "chapterId",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Archive_API.Controllers.PersonController",
+    "Method": "UpdateMotherId",
+    "RelativePath": "api/Person/{personId}/mother/{motherId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "motherId",
+        "Type": "System.Guid",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -432,37 +473,6 @@
       },
       {
         "Name": "fatherId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Guid",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Archive_API.Controllers.PersonController",
-    "Method": "UpdateMotherId",
-    "RelativePath": "api/Person/mother-id",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "personId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "motherId",
         "Type": "System.Guid",
         "IsRequired": false
       }
@@ -566,6 +576,37 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Archive_API.Controllers.TreeController",
+    "Method": "AddPersonToTree",
+    "RelativePath": "api/Tree/add-person",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "treeId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "personId",
         "Type": "System.Guid",
         "IsRequired": false
       }
@@ -772,14 +813,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "login",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "userLogin",
+        "Type": "Archive_API.Contracts.UserContracts.UserLogin",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [

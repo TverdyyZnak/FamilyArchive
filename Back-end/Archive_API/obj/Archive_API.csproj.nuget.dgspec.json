@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj": {}
+    "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj": {}
   },
   "projects": {
-    "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj": {
+    "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj",
+        "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\obj\\",
+        "outputPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,17 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
-                "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj"
-              },
-              "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
+              "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
               }
             }
           }
@@ -90,14 +88,14 @@
         }
       }
     },
-    "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj": {
+    "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
+        "projectUniqueName": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
         "projectName": "Archive_API",
-        "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
+        "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\Archive_API.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\obj\\",
+        "outputPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -112,20 +110,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj": {
-                "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj"
+              "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj": {
+                "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Application\\Application.csproj"
               },
-              "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
-                "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj"
+              "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
+                "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj"
               },
-              "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
+              "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
               }
             }
           }
@@ -188,14 +187,14 @@
         }
       }
     },
-    "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
+    "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj",
+        "projectUniqueName": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj",
         "projectName": "Archive_DbContext",
-        "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj",
+        "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\Archive_DbContext.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\obj\\",
+        "outputPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Archive_DbContext\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -210,14 +209,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
+              "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj"
               }
             }
           }
@@ -273,14 +273,14 @@
         }
       }
     },
-    "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
+    "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj",
+        "projectPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\.Проекты\\FamilyArchive\\Back-end\\Domain\\obj\\",
+        "outputPath": "C:\\D\\.Проекты\\FamilyArchive\\Back-end\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -295,6 +295,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

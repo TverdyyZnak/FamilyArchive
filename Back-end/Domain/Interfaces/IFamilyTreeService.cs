@@ -4,6 +4,7 @@ namespace Application.Services
 {
     public interface IFamilyTreeService
     {
+        Task<Guid> AddPersonToTree(Guid treeId, Guid personId);
         Task<Guid> AddUserToTreeUserList(Guid treeId, Guid userId);
         Task<Guid> CreateNewTree(FamilyTree tree);
         Task<Guid> DeleteTree(Guid id);

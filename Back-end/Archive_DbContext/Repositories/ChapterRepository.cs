@@ -41,6 +41,8 @@ namespace Archive_DbContext.Repositories
 
         public async Task<Guid> CreateNewChapter(Chapter chapter)
         {
+            var personEntity = await _context.Person.FirstOrDefaultAsync(p => p.Id == chapter.PersonId);
+
             ChapterEntity entity = new ChapterEntity
             {
                 Id = chapter.Id,
@@ -49,6 +51,8 @@ namespace Archive_DbContext.Repositories
                 Description = chapter.Description,
                 StartDate = chapter.StartDate,
                 EndDate = chapter.EndDate,
+                PersonId = chapter.PersonId,
+                Person = personEntity
             };
 
             await _context.Chapter.AddAsync(entity);

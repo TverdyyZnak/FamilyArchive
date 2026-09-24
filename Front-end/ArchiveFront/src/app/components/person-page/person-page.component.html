@@ -1,0 +1,99 @@
+<main>
+    <section>
+        <div class="person-info">
+            <img src="/assets/Mill.webp">
+            <div class="info">
+                <div class="full-name">
+                    <p><b>{{person?.lastName}}</b></p>
+                    <p>{{person?.firstName}}</p>
+                    <p>{{person?.surname}}</p>
+                </div>
+                <div class="timeline">
+                    @if (person?.birthday == null)
+                    {
+                    <p>Дата рождения не известна</p>
+                    }
+                    @else
+                    {
+                    <p>{{person?.birthday}}</p>
+                    }
+                    <p> — </p>
+                    @if (person?.death == null)
+                    {
+                    <p>Дата смерти не известна</p>
+                    }
+                    @else
+                    {
+                    <p>{{person?.death}}</p>
+                    }
+                </div>
+                <div class="person-biography">
+                    <p><b>Короткая биография:</b></p>
+                    <p style="padding-right: 15px; text-align: justify;">{{person?.biography}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="chapters">
+            <div class="buttons">
+                @if (jwt?.Id == archive?.mainUserId)
+                {
+                <button class="main-button" (click)="isOpen = true">Добавить главу</button>
+                <button class="main-button" (click)="Delete()">Удалить человека</button>
+                }
+            </div>
+            <div class="chapters-list">
+                @for (item of person?.chapters; track $index)
+                {
+                <div class="chapter-card">
+                    <p style="margin-bottom: 20px;"><b>{{item.title}}</b></p>
+                    <b>Описание:</b>
+                    <p style="text-align: justify;">{{item.description}}</p>
+                    <div class="timeline">
+                        @if (item.start == null)
+                        {
+                        <p>Дата начала не известна</p>
+                        }
+                        @else
+                        {
+                        <p>{{item.start}}</p>
+                        }
+                        <p> — </p>
+                        @if (item.end == null)
+                        {
+                        <p>Дата смерти не известна</p>
+                        }
+                        @else
+                        {
+                        <p>{{item.end}}</p>
+                        }
+                    </div>
+                    <button class="main-button" style="font-size: 24px;"
+                        (click)="DeleteChapter(item.id)"
+                    >Удалить</button>
+                </div>
+                }
+            </div>
+        </div>
+    </section>
+</main>
+
+@if (isOpen)
+{
+<div class="add-chapter">
+    <section>
+        <p>Название главы</p>
+        <input type="text" #iTI>
+        <p>Описание</p>
+        <textarea #iD></textarea>
+        <p>Дата начала</p>
+        <input type="date" #iS>
+        <p>Дата конца</p>
+        <input type="date" #iE>
+
+        <div>
+            <button class="sub-button" (click)="isOpen = false">Отмена</button>
+            <button class="main-button" (click)="AddChapter(iTI.value,  iD.value, iS.value, iE.value)">Добавить</button>
+        </div>
+    </section>
+</div>
+}

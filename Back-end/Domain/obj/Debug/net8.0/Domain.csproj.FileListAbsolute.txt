@@ -10,3 +10,15 @@ D:\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\refint\Domain.
 D:\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.pdb
 D:\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\ref\Domain.dll
 D:\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\bin\Debug\net8.0\Domain.dll
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\bin\Debug\net8.0\Domain.pdb
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.dll
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\Domain.pdb
+C:\D\.Проекты\FamilyArchive\Back-end\Domain\obj\Debug\net8.0\ref\Domain.dll

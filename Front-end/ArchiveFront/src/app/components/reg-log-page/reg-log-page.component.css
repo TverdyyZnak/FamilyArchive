@@ -1,0 +1,134 @@
+main {
+    z-index: 1;
+    background-color: #fcd4aa60;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/back/Back1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    section {
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        height: 65%;
+        width: 50%;
+        border: 3px solid #475631;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+
+        img {
+            z-index: 2;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            border-right: 3px solid #475631;
+        }
+    }
+
+
+    .login-div {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e5d5c252;
+        backdrop-filter: blur(1px);
+        transition: opacity 0.6s ease;
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+
+        button {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+
+    img {
+        width: 50%;
+        border-left: 3px solid #475631;
+    }
+
+    .reg-div {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e5d5c252;
+        backdrop-filter: blur(1px);
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+
+    }
+
+
+
+    button {
+        margin: 20px 0 20px 0;
+        border: 1px solid #475631;
+        background-color: #475631;
+        color: #fff3d8;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #fff3d8;
+        color: #475631;
+    }
+
+    input {
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        box-shadow: inset 1px 0px 5px rgba(0, 0, 0, 0.349);
+        border: solid 1px #475631;
+        background-color: #ffffffb9;
+    }
+
+    input:focus {
+        box-shadow: 1px 1px 20px #ffffff;
+    }
+
+    .line-p {
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .line-p::after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #475631;
+    }
+
+    .line-p:hover {
+        color: #57693c;
+    }
+
+}

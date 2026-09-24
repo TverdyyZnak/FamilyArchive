@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'MainFont';
+    font-size: 30px;
+    color: #422f1a;
+}
+
+html {
+  interpolate-size: allow-keywords;
+}
+@font-face {
+  font-family: 'MainFont';
+  src: url('../public/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
+}
